@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>仿京东商城</title>
+    <link href="./css/reset.css"></link>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/alibaba.css">
+</head>
+<body>
+    <div class="contanter">
+        <!-- 1. 导航栏 -->
+        <nav class="nav ">
+            <div class="nav-title">
+                <!-- 左定位 -->
+                <div class="nav-location">
+                    <i class="iconfont icon-iconfonticon2"></i>
+                    <span class="font">洛阳</span>
+                </div>
+                <!-- 右导航 -->
+                <div class="nav-n">
+                    <ul>
+                        <li class="cur firstCur"><a href="JavaScript:;" class="font">你好，请登录  免费注册</a></li>
+                        <li class="spacer">|</li>
+                        <li class="cur"><a href="JavaScript:;" class="font">我的订单</a></li>
+                        <li class="spacer">|</li>
+                        <li class="cur"><a href="JavaScript:;" class="font">我的京东</a></li>
+                        <li class="spacer">|</li>
+                        <li class="cur"><a href="JavaScript:;" class="font">京东会员</a></li>
+                        <li class="spacer">|</li>
+                        <li class="cur"><a href="JavaScript:;" class="font">企业采购</a></li>
+                        <li class="spacer">|</li>
+                        <li class="cur"><a href="JavaScript:;" class="font">客户服务</a></li>
+                        <li class="spacer">|</li>
+                        <li class="cur"><a href="JavaScript:;" class="font">网站导航</a></li>
+                        <li class="spacer">|</li>
+                        <li class="cur"><a href="JavaScript:;" class="font">手机京东</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- 1. 导航栏 -->
+
+        <!-- 2.搜索栏 -->
+        <div class="jb-search">
+            <div class="jd-navsearch">
+                <!-- 左盒子 BBF-->
+                <div class="jd-nav-search-left">
+                    <img src="./image/jd-logo.gif" alt="">
+                </div>
+                <!--  右盒子 -->
+                <div class="jd-nav-search-right">
+                    <!-- 1. input 搜索框 -->
+                    <div class="search">
+                        <!-- 真 搜索框 -->
+                       <div class="search-dv">
+                           <ul>
+                               <li>
+                                   <input type="text" id="input" placeholder="内裤">
+                                   <i class="iconfont icon-xiangji"></i>
+                               </li>
+                               <li>
+                                   <i class="i iconfont icon-sousuo"></i>
+                               </li>
+                           </ul>
+                       </div>
+                       <!-- 热门搜索 -->
+                       <div class="hot-search">
+                           <a href="JavaScript:;">习酒赠黄金</a>
+                           <a href="JavaScript:;">省电空调</a>
+                           <a href="JavaScript:;">生鲜5折</a>
+                           <a href="JavaScript:;">3件7折</a>
+                           <a href="JavaScript:;">父爱配方</a>
+                           <a href="JavaScript:;">路由器</a>
+                           <a href="JavaScript:;">潮流新款</a>
+
+                       </div>
+                       <!-- 热门搜索 -->
+                       <!-- 购物车 -->
+                       <div class="shopping">
+                            <div class="shopIcon">
+                                <i class="iconfont icon-biaoqianA01_gouwuche-59"></i>
+                                <span>0</span>
+                            </div>
+                            <div class="shopcen">
+                                我的购物车
+                            </div>
+                       </div>
+                       <!-- 购物车 -->
+                    </div>
+                    <!-- 2. 下面导航 -->
+                    <div class="search-nav">
+                        <ul>
+                            <li><a class="fontColor" href="javascript:;">秒杀</a></li>
+                            <li><a class="fontColor" href="javascript:;">优惠券</a></li>
+                            <li><a href="javascript:;">PLUS会员</a></li>
+                            <li><a href="javascript:;">品牌闪购</a></li>
+                            <li><a href="javascript:;">拍卖</a></li>
+                            <li><a href="javascript:;">京东家电</a></li>
+                            <li><a href="javascript:;">京东超市</a></li>
+                            <li><a href="javascript:;">京东生鲜</a></li>
+                            <li><a href="javascript:;">京东国际</a></li>
+                            <li><a href="javascript:;">京东云</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 2.搜索栏 -->
+        
+        <!-- 3.内容区 -->
+        <div class="content">
+            <!-- 轮播图区域 -->
+            <div class="content-inner">
+                <!-- 左侧页面布局 -->
+                <div class="content-inner-left">
+                    <ul>
+                        <li><a href="javascript:;"> 家用电器</a></li>
+                        <li><a href="javascript:;">手机 / 运营商 / 数码</a></li>
+                        <li><a href="javascript:;">电脑 / 办公</a></li>
+                        <li><a href="javascript:;">家居 / 家具 / 家装 / 厨具</a></li>
+                        <li><a href="javascript:;">男装 / 女装 / 童装 / 内衣</a></li>
+                        <li><a href="javascript:;">美妆 / 个护清洁 / 宠物</a></li>
+                        <li><a href="javascript:;">女鞋 / 箱包 / 钟表 / 珠宝</a></li>
+                        <li><a href="javascript:;">男鞋 / 运动 / 户外</a></li>
+                        <li><a href="javascript:;">房产 / 汽车 / 汽车用品</a></li>
+                        <li><a href="javascript:;">母婴 / 玩具乐器</a></li>
+                        <li><a href="javascript:;">食品 / 酒类 / 生鲜 / 特产</a></li>
+                        <li><a href="javascript:;">艺术 / 礼品鲜花 / 农资绿植</a></li>
+                        <li><a href="javascript:;">医药保健 / 计生情趣</a></li>
+                        <li><a href="javascript:;">图书 / 文娱 / 教育 / 电子书</a></li>
+                        <li><a href="javascript:;">机票 / 酒店 / 旅游 / 生活</a></li>
+                        <li><a href="javascript:;">理财 / 众筹 / 白条 / 保险</a></li>
+                        <li><a href="javascript:;">安装 / 维修 / 清洗 / 二手</a></li>
+                        <li><a href="javascript:;">工业品</a></li>
+                    </ul>
+                </div>
+                <div class="content-inner-middle">
+                    <img src="./image/banner.webp" alt="">
+                </div>
+                <div class="content-inner-right">
+                    <!-- 1. 注册登录 -->
+                    <div class="loginOrRes">
+                        <div class="login-img">
+                            <div class="img">
+                                <img src="./image/jdog.png" alt="">
+                            </div>
+                          
+                            <div class="i">
+                                <a href="javascript:;">Hi~欢迎逛京东</a>
+                                <a href="javascript:;">登录 | 注册</a>
+                            </div>
+                        </div>
+                        <div class="login-bottom">
+                            <span>新人福利</span>
+                            <span>PLUS会员</span>
+                        </div>
+                    </div>
+                    <!-- 2. jd news -->
+                    <div class="jd-news">
+                        <div class="jd-new-nav">
+                            <h3>京东快报</h3>
+                            <span>更多<i class="iconfont icon-jiantou"></i></span>
+                        </div>
+                        <div class="jd-news-li">
+                            <ul>
+                                <li><span>HOT</span><a href="javascript:;">污物冲不尽、堵塞、异味？那是你马桶没选对！</a></li>
+                                <li><span>热门</span><a href="javascript:;">笔记本电脑中的“兰博基尼”，机械师毒药让你欲罢不能！</a></li>
+                                <li><span>最新</span><a href="javascript:;">多油松沙的海鸭蛋黄，可用来制作多样美食你马桶没选对</a></li>
+                                <li><span>最新</span><a href="javascript:;">小户家庭保鲜能手你马桶没选对你马桶没选对你马桶没选</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 3. 精灵图 -->
+                    <div class="elf">
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-feiji feiji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                        <div class="slf-item">
+                            <i class="iconfont icon-shouji"></i>
+                            <span>话费</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 轮播图区域 -->
+
+            <!-- 今日好货 -->
+            <div class="show">
+                <div class="py-container">
+                    <ul class="yui3-g Recommend">
+                        <li class="yui3-u-1-6 clock">
+                            <div class="time"><img src="image/clock.png">
+                                <h3>今日推荐</h3>
+                            </div>
+                        </li>
+                        <li class="yui3-u-5-24"><img src="uploads/today01.png"></li>
+                        <li class="yui3-u-5-24"><img src="uploads/today02.png"></li>
+                        <li class="yui3-u-5-24"><img src="uploads/today03.png"></li>
+                        <li class="yui3-u-5-24"><img src="uploads/today04.png"></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 今日好货 -->
+
+
+            <!-- 推荐货物 -->
+            <div class="recommend">
+                <!-- 标题 -->
+                <div class="recommend-title">
+                    <h2>家用电器</h2>
+                    <div class="list">
+                        <ul>
+                            <li ><a href="javascript:;" class="color">热门</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">大家电</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">生活电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">厨房电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">应季电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">空气/净水</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">高端电器</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 标题 -->
+                <!-- 内容 -->
+                <div class="recommend-content">
+                    <div class="recommend-item">
+                        <div class="recommend-item-top">
+                            <ul>
+                                <li><a href="javscript:;">节能补贴</a></li>
+                                <li><a href="javscript:;">4K电视空气</a></li>
+                                <li><a href="javscript:;">净化器</a></li>
+                                <li><a href="javscript:;">IH电饭煲</a></li>
+                                <li><a href="javscript:;">滚筒洗衣机</a></li>
+                                <li><a href="javscript:;">电热水器</a></li>
+                            </ul>
+                        </div>
+                        <div class="recommend-item-bottom  first-rec">
+                            <img src="./uploads/floor-1-1.png" alt="">
+                        </div>
+                </div>
+                <div class="recommend-item item">
+                    <img src="./uploads/floor-1-b01.png" alt="">
+                 </div>
+              
+                <div class="recommend-item middle-rec">
+                   <div class="middle-rec-top">
+                       <img src="./uploads/floor-1-2.png" alt="">
+                   </div>
+                   <div class="middle-rec-bottom">
+                    <img src="./uploads/floor-1-3.png" alt="">
+                   </div>
+                 </div>
+
+                 <div class="recommend-item middle-rec left">
+                    <div class="middle-rec-top">
+                        <img src="./uploads/floor-1-6.png" alt="">
+                    </div>
+                    <div class="middle-rec-bottom">
+                     <img src="./uploads/floor-1-5.png" alt="">
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- 内容 -->
+            </div>
+            <!-- 推荐货物 -->
+
+            <!-- 推荐货物 -->
+            <div class="recommend">
+                <!-- 标题 -->
+                <div class="recommend-title">
+                    <h2>家用电器</h2>
+                    <div class="list">
+                        <ul>
+                            <li ><a href="javascript:;" class="color">热门</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">大家电</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">生活电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">厨房电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">应季电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">空气/净水</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">高端电器</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 标题 -->
+                <!-- 内容 -->
+                <div class="recommend-content">
+                    <div class="recommend-item">
+                        <div class="recommend-item-top">
+                            <ul>
+                                <li><a href="javscript:;">节能补贴</a></li>
+                                <li><a href="javscript:;">4K电视空气</a></li>
+                                <li><a href="javscript:;">净化器</a></li>
+                                <li><a href="javscript:;">IH电饭煲</a></li>
+                                <li><a href="javscript:;">滚筒洗衣机</a></li>
+                                <li><a href="javscript:;">电热水器</a></li>
+                            </ul>
+                        </div>
+                        <div class="recommend-item-bottom  first-rec">
+                            <img src="./uploads/floor-1-1.png" alt="">
+                        </div>
+                </div>
+                <div class="recommend-item item">
+                    <img src="./uploads/floor-1-b01.png" alt="">
+                 </div>
+              
+                <div class="recommend-item middle-rec">
+                   <div class="middle-rec-top">
+                       <img src="./uploads/floor-1-2.png" alt="">
+                   </div>
+                   <div class="middle-rec-bottom">
+                    <img src="./uploads/floor-1-3.png" alt="">
+                   </div>
+                 </div>
+
+                 <div class="recommend-item middle-rec left">
+                    <div class="middle-rec-top">
+                        <img src="./uploads/floor-1-6.png" alt="">
+                    </div>
+                    <div class="middle-rec-bottom">
+                     <img src="./uploads/floor-1-5.png" alt="">
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- 内容 -->
+            </div>
+            <!-- 推荐货物 -->
+
+
+            <!-- 推荐货物 -->
+            <div class="recommend">
+                <!-- 标题 -->
+                <div class="recommend-title">
+                    <h2>家用电器</h2>
+                    <div class="list">
+                        <ul>
+                            <li ><a href="javascript:;" class="color">热门</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">大家电</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">生活电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">厨房电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">应季电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">空气/净水</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">高端电器</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 标题 -->
+                <!-- 内容 -->
+                <div class="recommend-content">
+                    <div class="recommend-item">
+                        <div class="recommend-item-top">
+                            <ul>
+                                <li><a href="javscript:;">节能补贴</a></li>
+                                <li><a href="javscript:;">4K电视空气</a></li>
+                                <li><a href="javscript:;">净化器</a></li>
+                                <li><a href="javscript:;">IH电饭煲</a></li>
+                                <li><a href="javscript:;">滚筒洗衣机</a></li>
+                                <li><a href="javscript:;">电热水器</a></li>
+                            </ul>
+                        </div>
+                        <div class="recommend-item-bottom  first-rec">
+                            <img src="./uploads/floor-1-1.png" alt="">
+                        </div>
+                </div>
+                <div class="recommend-item item">
+                    <img src="./uploads/floor-1-b01.png" alt="">
+                 </div>
+              
+                <div class="recommend-item middle-rec">
+                   <div class="middle-rec-top">
+                       <img src="./uploads/floor-1-2.png" alt="">
+                   </div>
+                   <div class="middle-rec-bottom">
+                    <img src="./uploads/floor-1-3.png" alt="">
+                   </div>
+                 </div>
+
+                 <div class="recommend-item middle-rec left">
+                    <div class="middle-rec-top">
+                        <img src="./uploads/floor-1-6.png" alt="">
+                    </div>
+                    <div class="middle-rec-bottom">
+                     <img src="./uploads/floor-1-5.png" alt="">
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- 内容 -->
+            </div>
+            <!-- 推荐货物 -->
+
+
+            <!-- 推荐货物 -->
+            <div class="recommend">
+                <!-- 标题 -->
+                <div class="recommend-title">
+                    <h2>家用电器</h2>
+                    <div class="list">
+                        <ul>
+                            <li ><a href="javascript:;" class="color">热门</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">大家电</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">生活电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">厨房电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">应季电器</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">空气/净水</a></li>
+                            <li class="spacer">|</li>
+                            <li><a href="javascript:;">高端电器</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 标题 -->
+                <!-- 内容 -->
+                <div class="recommend-content">
+                    <div class="recommend-item">
+                        <div class="recommend-item-top">
+                            <ul>
+                                <li><a href="javscript:;">节能补贴</a></li>
+                                <li><a href="javscript:;">4K电视空气</a></li>
+                                <li><a href="javscript:;">净化器</a></li>
+                                <li><a href="javscript:;">IH电饭煲</a></li>
+                                <li><a href="javscript:;">滚筒洗衣机</a></li>
+                                <li><a href="javscript:;">电热水器</a></li>
+                            </ul>
+                        </div>
+                        <div class="recommend-item-bottom  first-rec">
+                            <img src="./uploads/floor-1-1.png" alt="">
+                        </div>
+                </div>
+                <div class="recommend-item item">
+                    <img src="./uploads/floor-1-b01.png" alt="">
+                 </div>
+              
+                <div class="recommend-item middle-rec">
+                   <div class="middle-rec-top">
+                       <img src="./uploads/floor-1-2.png" alt="">
+                   </div>
+                   <div class="middle-rec-bottom">
+                    <img src="./uploads/floor-1-3.png" alt="">
+                   </div>
+                 </div>
+
+                 <div class="recommend-item middle-rec left">
+                    <div class="middle-rec-top">
+                        <img src="./uploads/floor-1-6.png" alt="">
+                    </div>
+                    <div class="middle-rec-bottom">
+                     <img src="./uploads/floor-1-5.png" alt="">
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- 内容 -->
+            </div>
+            <!-- 推荐货物 -->
+    
+         
+         </div>
+                 <!--商标-->
+                 <div class="brand">
+                    <div class="py-container">
+                        <ul class="Brand-list blockgary">
+                            <li class="Brand-item"><img src="uploads/brand_21.png"></li>
+                            <li class="Brand-item"><img src="uploads/brand_03.png"></li>
+                            <li class="Brand-item"><img src="uploads/brand_05.png"></li>
+                            <li class="Brand-item"><img src="uploads/brand_07.png"></li>
+                            <li class="Brand-item"><img src="uploads/brand_09.png"></li>
+                            <li class="Brand-item"><img src="uploads/brand_11.png"></li>
+                            <li class="Brand-item"><img src="uploads/brand_13.png"></li>
+                            <li class="Brand-item"><img src="uploads/brand_15.png"></li>
+                            <li class="Brand-item"><img src="uploads/brand_17.png"></li>
+                            <li class="Brand-item"><img src="uploads/brand_19.png"></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- 商标 -->
+    
+                <!-- footer -->
+                <footer>
+                    <div class="footer-title">
+                        <div class="footer-item">
+                            <h3>品类齐全</h3>
+                        </div>
+                        <div class="footer-item">
+                            <h3>轻松购物</h3>
+                        </div>
+                        <div class="footer-item">
+                            <h3>极速配送</h3>
+                        </div>
+                        <div class="footer-item">
+                            <h3>天天低价</h3>
+                        </div>
+                    </div>
+
+                    <p>关于我们 联系我们 关于我们 商家入驻 营销中心 友情链接 关于我们 营销中心 友情链接 关于我们</p>
+                     <p> 地址：北京市昌平区建材城西路金燕龙办公楼一层 邮编：100096 电话：400-618-4000 传真：010-82935100
+                        
+                        京ICP备08001421号京公网安备110108007702</p>
+                </footer>
+                <!-- footer -->
+    </div>
+</body>
+</html>
